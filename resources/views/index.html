@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="row" style="height: 100vh">
+      <div class="col-3 col-lg-3" style="border-right: 1px solid #202327">
+        <div
+          class="row justify-content-center align-items-center mt-5"
+          style="height: 80vh"
+        >
+          <div class="col-lg-8">
+            <ul class="list-unstyled sidebar-menu-item">
+              <div class="row menu-item justify-content-between">
+                <div class="col-lg-3">
+                  <i class="fa-solid fa-house"></i>
+                </div>
+                <div class="col-lg d-none d-lg-block">
+                  <a href="" class="text-decoration-none text-white">Home</a>
+                </div>
+              </div>
+              <div class="row menu-item">
+                <div class="col-lg-3">
+                  <i class="fa-solid fa-hashtag"></i>
+                </div>
+                <div class="col-lg d-none d-lg-block">
+                  <a href="" class="text-decoration-none text-white">Explore</a>
+                </div>
+              </div>
+              <div class="row menu-item">
+                <div class="col-lg-3">
+                  <i class="fa-solid fa-bell"></i>
+                </div>
+                <div class="col-lg d-none d-lg-block">
+                  <a href="" class="text-decoration-none text-white"
+                    >Notification</a
+                  >
+                </div>
+              </div>
+              <div class="row menu-item">
+                <div class="col-lg-3">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="col-lg d-none d-lg-block">
+                  <a href="" class="text-decoration-none text-white"
+                    >Messages</a
+                  >
+                </div>
+              </div>
+              <div class="row menu-item">
+                <div class="col-lg-3">
+                  <i class="fa-solid fa-list"></i>
+                </div>
+                <div class="col-lg d-none d-lg-block">
+                  <a href="" class="text-decoration-none text-white">Lists</a>
+                </div>
+              </div>
+              <div class="row menu-item">
+                <div class="col-lg-3">
+                  <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="col-lg d-none d-lg-block">
+                  <a href="" class="text-decoration-none text-white"
+                    >Bookmark</a
+                  >
+                </div>
+              </div>
+              <div class="row menu-item">
+                <div class="col-lg-3">
+                  <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="col-lg d-none d-lg-block">
+                  <a href="" class="text-decoration-none text-white">Profile</a>
+                </div>
+              </div>
+              <div class="row menu-item">
+                <div class="col-lg-3">
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="col-lg d-none d-lg-block">
+                  <a href="" class="text-decoration-none text-white">More</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg text-center tweet-button d-none d-lg-block">
+                  <span>Tweet</span>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col col-lg" style="border-right: 1px solid #202327">
+        <nav class="navbar" style="border-bottom: 1px solid #202327">
+          <a class="text-white text-decoration-none" href="#">
+            <h4>Home</h4>
+          </a>
+        </nav>
+        <!-- New Tweet Input -->
+        <div
+          class="row justify-content-evenly"
+          style="border-bottom: 1px solid #202327"
+        >
+          <div class="col-lg d-flex">
+            <img
+              src="img/user.jpg"
+              class="img-fluid profile-image"
+              style="height: 50px; width: 50px; border-radius: 50px"
+              alt=""
+            />
+            <div class="input-group mt-3">
+              <textarea
+                class="form-control bg-transparent text-white border-0 shadow-none"
+                placeholder="What's happening?"
+                aria-label="With textarea"
+              ></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1 col-lg-1"></div>
+            <div class="col col-lg">
+              <a href="" style="color: #21a6ff" class="text-decoration-none">
+                <i
+                  class="fa-solid fa-image mt-2 mb-3"
+                  style="margin-right: 10px"
+                ></i>
+              </a>
+              <a href="" style="color: #21a6ff" class="text-decoration-none">
+                <i class="fa-regular fa-face-smile"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- End New Tweet Input -->
+        <!-- All Tweets -->
+        <div
+          class="row justify-content-evenly"
+          style="border-bottom: 1px solid #202327"
+        >
+          <div class="col-lg d-flex">
+            <img
+              src="img/user.jpg"
+              class="img-fluid profile-image"
+              style="
+                height: 50px;
+                width: 50px;
+                border-radius: 50px;
+                margin-right: 20px;
+              "
+              alt=""
+            />
+            <div class="input-group mt-3">
+              <h6>
+                Username <span class="text-secondary">@username121212</span>
+              </h6>
+              <p class="text-justify">
+                Orang yang ngetawain dan ngejokes tentang masalah Bhaskara
+                mungkin dia blm ketemu langsung. Sebaik dan sehumble itu dia
+                sama orang baru, salah satunya ke gw yg awalnya gw fans sama dia
+                malah bisa jadi temen. Semua yg udh ketemu dia pasti sependapat
+                sama gw
+              </p>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-1 col-lg-1"></div>
+            <div class="col col-lg d-flex">
+              <div class="col-3 col-lg-3">
+                <a href="" class="text-decoration-none text-secondary">
+                  <i class="fa-regular fa-comment"></i>
+                </a>
+              </div>
+              <div class="col-3 col-lg-3">
+                <a href="" class="text-decoration-none text-secondary">
+                  <i class="fa-solid fa-retweet"></i>
+                </a>
+              </div>
+              <div class="col-3 col-lg-3">
+                <a href="" class="text-decoration-none text-secondary">
+                  <i class="fa-solid fa-heart"></i>
+                </a>
+              </div>
+              <div class="col-3 col-lg-3">
+                <a href="" class="text-decoration-none text-secondary">
+                  <i class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row justify-content-evenly"
+          style="border-bottom: 1px solid #202327"
+        >
+          <div class="col-lg d-flex">
+            <img
+              src="img/user.jpg"
+              class="img-fluid profile-image"
+              style="
+                height: 50px;
+                width: 50px;
+                border-radius: 50px;
+                margin-right: 20px;
+              "
+              alt=""
+            />
+            <div class="input-group mt-3">
+              <h6>
+                Username <span class="text-secondary">@username121212</span>
+              </h6>
+              <p class="text-justify">
+                Di usia 23 emang lagi masa-masanya jatuh. Temen udah pada
+                ninggalin dan cari kehidupan masing-masing yang tersisa cuma 1-2
+                temen yang akhirnya nemenin proses pendewasaan kita yang
+                nantinya mereka juga yang bakal bantu kita menjadi lebih dewasa
+                dan sukses
+              </p>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-1 col-lg-1"></div>
+            <div class="col col-lg d-flex">
+              <div class="col-3 col-lg-3">
+                <a href="" class="text-decoration-none text-secondary">
+                  <i class="fa-regular fa-comment"></i>
+                </a>
+              </div>
+              <div class="col-3 col-lg-3">
+                <a href="" class="text-decoration-none text-secondary">
+                  <i class="fa-solid fa-retweet"></i>
+                </a>
+              </div>
+              <div class="col-3 col-lg-3">
+                <a href="" class="text-decoration-none text-secondary">
+                  <i class="fa-solid fa-heart"></i>
+                </a>
+              </div>
+              <div class="col-3 col-lg-3">
+                <a href="" class="text-decoration-none text-secondary">
+                  <i class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row justify-content-evenly"
+          style="border-bottom: 1px solid #202327"
+        >
+          <div class="col-lg d-flex">
+            <img
+              src="img/user.jpg"
+              class="img-fluid profile-image"
+              style="
+                height: 50px;
+                width: 50px;
+                border-radius: 50px;
+                margin-right: 20px;
+              "
+              alt=""
+            />
+            <div class="input-group mt-3">
+              <h6>
+                Username <span class="text-secondary">@username121212</span>
+              </h6>
+              <p class="text-justify">
+                selamat siang Can jika kamu ingin mempertanyakan apa perlukah
+                cuitan ini dibuat, kamu akan merasakan jika nanti kamu menjadi
+                seorang ibu... ketakutan seorang ibu yang mengandung 9 bulan,
+                membesarkan, perjuangan membahagiakan anaknya
+              </p>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-1 col-lg-1"></div>
+            <div class="col col-lg d-flex">
+              <div class="col-3 col-lg-3">
+                <a href="" class="text-decoration-none text-secondary">
+                  <i class="fa-regular fa-comment"></i>
+                </a>
+              </div>
+              <div class="col-3 col-lg-3">
+                <a href="" class="text-decoration-none text-secondary">
+                  <i class="fa-solid fa-retweet"></i>
+                </a>
+              </div>
+              <div class="col-3 col-lg-3">
+                <a href="" class="text-decoration-none text-secondary">
+                  <i class="fa-solid fa-heart"></i>
+                </a>
+              </div>
+              <div class="col-3 col-lg-3">
+                <a href="" class="text-decoration-none text-secondary">
+                  <i class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row justify-content-evenly"
+          style="border-bottom: 1px solid #202327"
+        >
+          <div class="col-lg d-flex">
+            <img
+              src="img/user.jpg"
+              class="img-fluid profile-image"
+              style="
+                height: 50px;
+                width: 50px;
+                border-radius: 50px;
+                margin-right: 20px;
+              "
+              alt=""
+            />
+            <div class="input-group mt-3">
+              <h6>
+                Username <span class="text-secondary">@username121212</span>
+              </h6>
+              <p class="text-justify">
+                Serius kalo ada mahasiswa yg jajanannya begini, Pengetahuan ttg
+                gizi & pertumbuhan ngerti kagak, sih?
+              </p>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-1 col-lg-1"></div>
+            <div class="col col-lg d-flex">
+              <div class="col-3 col-lg-3">
+                <a href="" class="text-decoration-none text-secondary">
+                  <i class="fa-regular fa-comment"></i>
+                </a>
+              </div>
+              <div class="col-3 col-lg-3">
+                <a href="" class="text-decoration-none text-secondary">
+                  <i class="fa-solid fa-retweet"></i>
+                </a>
+              </div>
+              <div class="col-3 col-lg-3">
+                <a href="" class="text-decoration-none text-secondary">
+                  <i class="fa-solid fa-heart"></i>
+                </a>
+              </div>
+              <div class="col-3 col-lg-3">
+                <a href="" class="text-decoration-none text-secondary">
+                  <i class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End All Tweets -->
+      </div>
+      <div class="col-lg-3 d-none d-lg-block px-4 mt-5">
+        <div
+          class="card"
+          style="background-color: #16181c; color: #fafafa; border-radius: 15px"
+        >
+          <div class="card-body">
+            <h5 class="fw-bold">Trends For You</h5>
+            <div class="row mt-2 trending-item">
+              <div class="col-lg">
+                <span class="text-secondary" style="font-size: 13px"
+                  >Music</span
+                >
+                <h6 class="mb-0">BMTH</h6>
+                <span class="text-secondary" style="font-size: 13px"
+                  >3,617 Tweets</span
+                >
+              </div>
+              <div class="col-lg-2">
+                <i class="fa-solid fa-ellipsis"></i>
+              </div>
+            </div>
+            <div class="row mt-2 trending-item">
+              <div class="col-lg">
+                <span class="text-secondary" style="font-size: 13px"
+                  >Entertainment</span
+                >
+                <h6 class="mb-0">Tom Holland</h6>
+                <span class="text-secondary" style="font-size: 13px"
+                  >3,888 Tweets</span
+                >
+              </div>
+              <div class="col-lg-2">
+                <i class="fa-solid fa-ellipsis"></i>
+              </div>
+            </div>
+            <div class="row mt-2 trending-item">
+              <div class="col-lg">
+                <span class="text-secondary" style="font-size: 13px"
+                  >Trending in Indonesia</span
+                >
+                <h6 class="mb-0">bullying</h6>
+                <span class="text-secondary" style="font-size: 13px"
+                  >3,617 Tweets</span
+                >
+              </div>
+              <div class="col-lg-2">
+                <i class="fa-solid fa-ellipsis"></i>
+              </div>
+            </div>
+            <div class="row mt-2 trending-item">
+              <div class="col-lg">
+                <span class="text-secondary" style="font-size: 13px"
+                  >Trending in Indonesia</span
+                >
+                <h6 class="mb-0">Spirited Away</h6>
+                <span class="text-secondary" style="font-size: 13px"
+                  >3,617 Tweets</span
+                >
+              </div>
+              <div class="col-lg-2">
+                <i class="fa-solid fa-ellipsis"></i>
+              </div>
+            </div>
+            <div class="row mt-2 trending-item">
+              <div class="col-lg">
+                <span class="text-secondary" style="font-size: 13px"
+                  >Music</span
+                >
+                <h6 class="mb-0">Elon Musk Sucks</h6>
+                <span class="text-secondary" style="font-size: 13px"
+                  >1,222 Tweets</span
+                >
+              </div>
+              <div class="col-lg-2">
+                <i class="fa-solid fa-ellipsis"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/4c03683015.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
